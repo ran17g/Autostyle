@@ -1,0 +1,663 @@
+<section id="home" class="home-page-content page-content">
+    <!--START: home_carousel-->
+    <section class="homepage-slider">
+        <div class="homeCarousel flexslider" data-animation="[hc_effect]" data-slideshowspeed="[hc_delay]">
+            <script>
+                    //Slide JSON format
+                    /*
+					{                         
+						"background_color": "#000000",
+						"background_image": "/assets/templates/autostyle-core/images/slider.jpg",
+						"button_link": "#",
+						"button_text": "Shop now",
+						"details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nunc magna, malesuada a mauris sit amet, tempor tempus neque. Ut consectetur orci a luctus porttitor. Cras sagittis dui augue,at elementum massa rutrum at. Nullam a magna in nibh feugiat porttitor.Duis at lectus neque. Aenean viverra viverra magna, sit amet condimentum tellus suscipit quis. ",
+						"front_image": "#",
+						"heading": "Proformance Advanced Autoparts",
+						"text_color": "#ffffff"
+					}
+                    */
+
+                    var slides = '[';
+                    //<!--START: carousel-->
+                    slides += '[image],'
+                    //<!--END: carousel-->
+                    //remove last comma (,)
+                    slides = slides.substring(0, slides.length - 1);
+                    slides = slides + ']';
+            </script>
+
+            <div id="hp-slide-format" class="hidden">
+                <div class="container">
+                    <div class="row hp-slide-content">
+                        <div class="col-md-6">
+                            <div class="hp-slider-text-outer">
+								<div class="hp-slider-position scrollme">
+									<div class="hp-slider-text animateme" data-when="exit" data-from="0" data-to=".75" data-opacity="0" data-translatey="100">
+										<h3></h3>
+										<p></p>
+										<div class="hp-slider-cta">
+											<a href="" class="btn btn-primary"></a>
+										</div>
+									</div>
+								</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul id="hp-slides" class="slides"></ul>
+        </div>
+    </section>
+    <!--END: home_carousel-->
+	
+	<section class="banner-section">
+        <div class="container">
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<a href="#" style="background-image: url('assets/templates/[template]/images/banner1.jpg');">
+					<h3>PERFORMANCE TIRES</h3>
+				</a>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<a href="#" style="background-image: url('assets/templates/[template]/images/banner2.jpg');">
+					<h3>CAR BATTERIES</h3>
+				</a>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<a href="#" style="background-image: url('assets/templates/[template]/images/banner3.jpg');">
+					<h3>BRAKE PADS</h3>
+				</a>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<a href="#" style="background-image: url('assets/templates/[template]/images/banner1.jpg');">
+					<h3>HEADLIGHTS</h3>
+				</a>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<a href="#" style="background-image: url('assets/templates/[template]/images/banner2.jpg');">
+					<h3>MOTOR OIL</h3>
+				</a>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<a href="#" style="background-image: url('assets/templates/[template]/images/banner3.jpg');">
+					<h3>STARTERS</h3>
+				</a>
+			</div>			
+		</div>
+    </section>
+
+    <!--START: CATEGORY_HEADER-->
+    <section class="category-header">
+        <div class="container">[CONTENT]</div>
+    </section>
+    <!--END: CATEGORY_HEADER-->
+
+	<!--START: FEATURE_MENU-->
+    <section class="products-section">
+        <div class="container"> 
+            <h2 class="header-specials tc-animate-me animated" data-animation="fadeInUp">[category_Header-specials]</h2>
+            <!--START: CATEGORY_ITEMS-->
+            <div class="product-items product-items-[product-cols-number] tc-animate-me" data-animation="fadeInUp">
+               <div id="carousel-sellers" class="carousel slide">
+                <!--START: ITEM_TEMPLATE_0-->
+                [product_items]
+                <!--END: ITEM_TEMPLATE_0-->
+            	</div>
+            </div>
+            <!--END: CATEGORY_ITEMS-->      
+        </div>
+    </section>
+    <!--END: FEATURE_MENU-->
+	
+	<section class="slider-section">
+		<div class="container">
+			<div class="col-sm-6 col-xs-12">
+				<div class="slider-img scrollme">
+					<img class="animateme" data-easing="easeinout" data-when="enter" data-from=".75" data-to="0" data-opacity="0" data-translatey="400" src="assets/templates/[template]/images/performance-tires.jpg" alt="">
+				</div>
+			</div>
+			<div class="col-sm-6 col-xs-12 slider-details-holder">
+				<div class="slider-details scrollme">
+					<h2 class="animateme" data-when="enter" data-from=".75" data-to="0" data-opacity="0" data-translatex="400">Performance</h2>
+					<div class="slider-info animateme" data-when="enter" data-from=".75" data-to="0" data-opacity="0" data-translatex="400">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nunc magna, malesuada a mauris sit amet, tempor tempus neque. Ut consectetur orci a luctus porttitor. Cras sagittis dui augue, at elementum massa rutrum at. Nullam a magna in nibh feugiat porttitor.
+						</p>
+						<p>
+							Duis at lectus neque. Aenean viverra viverra magna, sit amet condimentum tellus suscipit quis. Vestibulum id tempus risus, at tempor erat. Cras et sapien at elementum massa rutrum at. Nullam a magna in nibh feugiat porttitor.
+						</p>
+					</div>
+					<div class="cta-btn animateme" data-when="enter" data-from=".75" data-to="0" data-opacity="0" data-translatex="400">
+						<a href="#">MORE DETAILS</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	
+	
+	<section class="testimonial-section">
+		<div class="container">
+			<h2>Testimonials</h2>
+			<div id="carousel-sellers2" class="carousel slide">	
+				<div class="col-md-4">
+					<div>
+						<p>
+							"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nunc magna, malesuada a mauris siamet, tempor tempus neque. Ut consectetur orci a luctus porttitor."
+						</p>
+						<h4>Jeff Michels</h4>
+					</div>
+				</div>
+				<div class="col-md-4 center-testimonial">
+					<div>
+						<p>
+							"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nunc magna, malesuada a mauris siamet, tempor tempus neque. Ut consectetur orci a luctus porttitor."
+						</p>
+						<h4>Lisa Bonnet</h4>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div>
+						<p>
+							"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nunc magna, malesuada a mauris siamet, tempor tempus neque. Ut consectetur orci a luctus porttitor."
+						</p>
+						<h4>Chirs Bron</h4>
+					</div>
+				</div>
+				<div class="col-md-4 center-testimonial">
+					<div>
+						<p>
+							"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nunc magna, malesuada a mauris siamet, tempor tempus neque. Ut consectetur orci a luctus porttitor."
+						</p>
+						<h4>Jeff Michels</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="newsletter-section">
+        <div class="container scrollme">
+			<div class="col-md-6 col-xs-12 animateme" data-when="enter" data-from="1" data-to="0" data-crop="false" data-opacity="0" data-scale="0.5">
+					<!--START: FRAME_MAILLIST-->
+                    <div class="mailist-box ajax-mailinglist" data-callfront="mailinglist_callfront" data-callback="mailinglist_response">
+                        <form method="post" name="mailing" action="mailing_list_ajax.asp">
+                            <h2>[frame_mailinglist]</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nunc magna, malesuada a mauris sit amet, tempor tempus neque. 
+							</p>
+                            <div class="mailinglist-form clearfix">
+                                <input class="mailinglist-input form-control" type="text" name="email" placeholder="[mailinglist_email-field]" autocomplete="off" />
+                                <button class="mailinglist-submit btn btn-default" type="submit" name="www">
+                                    <span id="mailing-btn-txt">[mailinglist_button]</span>
+                                    <span id="mailing-btn-load" class="mailing-btn-load icon-spin2 animate-spin hidden"></span>
+                                </button>
+                            </div>
+                            <div class="clearfix maillist-options hidden">
+                                <div class="subscribe"><input id="list_subscribe" type="radio" name="subscribe" value="1" checked="checked"> <label for="list_subscribe">[mailinglist_subscribe]</label></div>
+                                <div class="subscribe"><input id="list_unsubscribe" type="radio" name="subscribe" value="0"> <label for="list_unsubscribe">[mailinglist_unsubscribe]</label></div>
+                            </div>
+                        </form>
+                        <div id="mailinglist-response" class="mailinglist-response">
+                            <div class="mailinglist-error hidden">[mailinglist_email-error]</div>
+                            <div class="mailinglist-subscribed hidden">[mailinglist_subscribe-success]</div>
+                            <div class="mailinglist-unsubscribed hidden">[mailinglist_unsubscribe-success]</div>
+                        </div>
+
+                    </div>
+					<!--END: FRAME_MAILLIST-->
+					<div class="clear"></div>
+					<h2></h2>
+					<!--START: social_icons-->
+                        <ul class="social-icons list-unstyled list-inline">
+                            <h2>[frame_social-icons-heading]</h2>
+                            <!--START: social_link_facebook-->
+                            <li><a href="[social_link_facebook_url]" class="facebook" target="_blank" title="Like Us on Facebook"><span class="icon-facebook"></span></a></li>
+                            <!--END: social_link_facebook-->
+                            <!--START: social_link_twitter-->
+                            <li><a href="[social_link_twitter_url]" class="twitter" target="_blank" title="Follow Us on Twitter"><span class="icon-twitter"></span></a></li>
+                            <!--END: social_link_twitter-->
+                            <!--START: social_link_googleplus-->
+                            <li><a href="[social_link_googleplus_url]" class="gplus" target="_blank" title="Follow Us on Google+"><span class="icon-gplus"></span></a></li>
+                            <!--END: social_link_googleplus-->
+                            <!--START: social_link_youTube-->
+                            <li><a href="[social_link_youTube_url]" class="youtube" target="_blank" title="Subscribe to our Channel"><span class="icon-youtube"></span></a></li>
+                            <!--END: social_link_youTube-->
+                            <!--START: social_link_pinterest-->
+                            <li><a href="[social_link_pinterest_url]" class="pinterest" target="_blank" title="Follow Us on Pinterest"><span class="icon-pinterest"></span></a></li>
+                            <!--END: social_link_pinterest-->
+                            <!--START: social_link_instagram-->
+                            <li><a href="[social_link_instagram_url]" class="instagram" target="_blank" title="Follow Us on Instagram"><span class="icon-instagram"></span></a></li>
+                            <!--END: social_link_instagram-->
+                            <!--START: social_link_tumblr-->
+                            <li><a href="[social_link_tumblr_url]" class="tumblr" target="_blank" title="Follow Us on Tumblr"><span class="icon-tumblr"></span></a></li>
+                            <!--END: social_link_tumblr-->
+                            <!--START: social_link_blog-->
+                            <li><a href="[social_link_blog_url]" class="blog" target="_blank" title="Subscribe to our Blog"><span class="icon-rss"></span></a></li>
+                            <!--END: social_link_blog-->
+                        </ul>
+                    <!--END: social_icons-->
+			</div>
+		</div>
+		<div class="home-google-map">
+			<div style="width: 100%; height: 100%;"><iframe width="100%" height="100%" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=6691%20Nob%20Hill%20Rd+(3dcart)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/map-my-route/">Create route map</a></iframe></div>	
+		</div>
+    </section>
+	
+	<section class="cta-section">
+        <div class="container">
+			<h2>Contact us for all your auto parts & services</h2>
+			<a href="/crm.asp?action=contactus">CONTACT US</a>
+		</div>
+    </section>
+	
+    <!--START: CATEGORY_FOOTER-->
+    <section class="category-footer">
+        <div class="container">[CONTENT]</div>
+    </section>
+    <!--END: CATEGORY_FOOTER-->
+
+	<section class="blog-articles hidden">
+        <div class="container">
+        	<!--START: blog_post-->
+			<!--START: post_title-->
+			<!--END: post_title-->
+			<div class="recent-article">
+				<a href="[pagename]">
+					<div class="col-md-3 article-img">
+						<img src="[post_image]" alt="#">
+					</div>
+					<div class="col-md-9 article-text-holder">
+						<!--START: post_title-->
+						<div class="article-text">
+							[subject]
+						</div>
+						<!--END: post_title-->
+						<!--START: read-more-->
+						<div class="read-more-article text-right">
+							<a href="[pagename]">[blog_read-more]</a>
+						</div>
+						<!--END: read-more-->
+					</div>
+				</a>
+			</div>
+			<!--END: blog_post-->
+        </div>
+    </section>
+</section>
+
+<!--START: template_scripts-->
+<script type="text/javascript" src="/assets/templates/common-core/lib/flexslider/jquery.flexslider-min.js"></script>
+<script type="text/javascript" charset="utf-8">
+    jQuery(function () {
+
+        var slidesJson = jQuery.parseJSON(slides);
+        jQuery(slidesJson).each(function (i, element) {
+            var slideItem = jQuery("<li></li>");
+            var slideFormat = jQuery('#hp-slide-format > div').clone();
+
+            jQuery(slideItem).css('background-image', 'url('+element.background_image+')');
+            jQuery(slideItem).css('background-color', element.background_color);
+            jQuery(slideFormat).find('.hp-slider-text').css('color', element.text_color);
+
+            jQuery(slideFormat).find('.hp-slider-text h3').html(element.heading);
+            jQuery(slideFormat).find('.hp-slider-text p').html(element.details);
+            jQuery(slideFormat).find('.hp-slider-cta a').attr('href', element.button_link);
+            jQuery(slideFormat).find('.hp-slider-cta a').html(element.button_text);
+            //jQuery(slideFormat).find('.hp-slider-img').append('<img src=' + element.front_image + ' alt="" />');
+    
+            jQuery(slideItem).append(slideFormat);
+
+            jQuery('#hp-slides').append(slideItem);
+        });
+
+        jQuery('.homeCarousel').flexslider({
+            animation: jQuery('.homeCarousel').attr('data-animation'),
+			slideshow: true,
+            slideshowSpeed: jQuery('.homeCarousel').attr('data-slideshowspeed'),
+            controlNav: true,
+            keyboard: false
+        });
+
+        var $window = jQuery(window),
+		flexslider = { vars: {} };
+
+        // tiny helper function to add breakpoints
+        function getGridSize() {
+            return (window.innerWidth <= 567) ? 1 :
+                   (window.innerWidth < 992) ? 2 : 4;
+        }
+
+        $window.on("load", function () {
+            jQuery('.hp-brands-flexslider').flexslider({
+                animation: "slide",
+                controlNav: false,
+                keyboard: false,
+                itemWidth: 210,
+                itemMargin: 0,
+                minItems: getGridSize(), // use function to pull in initial value
+                maxItems: getGridSize() // use function to pull in initial value
+            });
+
+            setTimeout(function () {
+                window.dispatchEvent(new Event('resize'));
+            }, 100);
+        });
+    });
+</script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script type="text/javascript" charset="utf-8">
+    jQuery(function () {
+        jQuery('#carousel-sellers').slick({
+            dots: false,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            responsive: [
+              {
+                  breakpoint: 1024,
+                  settings: {
+                      slidesToShow: 3,
+                      slidesToScroll: 3
+                  }
+              },
+              {
+                  breakpoint: 767,
+//                  settings: "unslick"
+                  settings: {
+                      slidesToShow: 2,
+                      slidesToScroll: 2
+                  }
+              },
+              {
+                  breakpoint: 600,
+//                  settings: "unslick"
+                  settings: {
+                      slidesToShow: 1,
+                      slidesToScroll: 1
+                  }
+              }
+            ]
+        });
+		 jQuery('#carousel-sellers2').slick({
+            dots: true,
+            infinite: true,
+			autoplay: true,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            responsive: [
+              {
+                  breakpoint: 1024,
+                  settings: {
+                      slidesToShow: 3,
+                      slidesToScroll: 3
+                  }
+              },
+              {
+                  breakpoint: 991,
+//                  settings: "unslick"
+                  settings: {
+                      slidesToShow: 2,
+                      slidesToScroll: 2
+                  }
+              },
+              {
+                  breakpoint: 767,
+//                  settings: "unslick"
+                  settings: {
+                      slidesToShow: 1,
+                      slidesToScroll: 1
+                  }
+              }
+            ]
+        });
+		
+        var carouselWidth = $('#carousel-sellers, #carousel-sellers2').width();
+        var carouselPad = 15 + 'px';
+		
+        $('.product-item.slick-slide').css('max-width', carouselWidth);
+        $('.product-item.slick-slide').css('padding-left', carouselPad);
+        $('.product-item.slick-slide').css('padding-right', carouselPad);
+		
+	});
+</script>
+<!--END: template_scripts-->
+
+<!--START: template_styles-->
+<link rel="stylesheet" href="/assets/templates/common-core/lib/flexslider/flexslider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" type="text/css" media="screen" />
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+<style>
+    .TSnav {
+        position: relative;
+        height: 50px;
+    }
+	.slick-list {
+		margin: 0 35px;
+	}
+    /* Arrows */
+    .slick-prev,
+    .slick-next
+    {
+        font-size: 0;
+        line-height: 0;
+
+        position: absolute;
+		z-index: 1;
+        top: 25%;
+
+        display: block;
+
+        width: 25px;
+        height: 40px;
+        padding: 0;
+        cursor: pointer;
+
+        color: transparent;
+        border: none;
+        outline: none;
+        background: transparent;
+    }
+    .slick-prev:hover,
+    .slick-prev:focus,
+    .slick-next:hover,
+    .slick-next:focus
+    {
+        color: transparent;
+        outline: none;
+        background: transparent;
+    }
+    .slick-prev:hover:before,
+    .slick-prev:focus:before,
+    .slick-next:hover:before,
+    .slick-next:focus:before
+    {
+        opacity: 1;
+    }
+    .slick-prev.slick-disabled:before,
+    .slick-next.slick-disabled:before
+    {
+        opacity: .25;
+    }
+
+    .slick-prev:before,
+    .slick-next:before
+    {
+        font-family: "fontello";
+        font-size: 40px;
+        line-height: 1;
+
+        opacity: .75;
+        color: #000;
+
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    .slick-prev
+    {
+        left: 5px;
+    }
+    [dir='rtl'] .slick-prev
+    {
+        right: 5px;
+        left: auto;
+    }
+    .slick-prev:before
+    {
+        content: '\f104';
+    }
+    [dir='rtl'] .slick-prev:before
+    {
+        content: '\f105';
+    }
+
+    .slick-next
+    {
+        right: 5px;
+    }
+    [dir='rtl'] .slick-next
+    {
+        right: auto;
+        left: 5px;
+    }
+    .slick-next:before
+    {
+        content: '\f105';
+    }
+    [dir='rtl'] .slick-next:before
+    {
+        content: '\f104';
+    }
+	#carousel-sellers2 .slick-prev, #carousel-sellers2 .slick-next{
+		top: 10%;
+	}
+    @media(min-width: 1200px) {
+        .slick-prev,
+        .slick-next
+        {
+            top: 30%;
+            width: 35px;
+            height: 50px;
+        }
+        .slick-prev:before,
+        .slick-next:before
+        {
+            font-size: 75px;
+        }
+
+        .slick-prev
+        {
+            left: 5px;
+        }
+        [dir='rtl'] .slick-prev
+        {
+            right: 5px;
+            left: auto;
+        }
+
+        .slick-next
+        {
+            right: 5px;
+        }
+        [dir='rtl'] .slick-next
+        {
+            right: auto;
+            left: 5px;
+        }
+    }
+    /* Dots */
+    .slick-dotted.slick-slider
+    {
+    }
+
+    .slick-dots
+    {
+        position: absolute;
+        bottom: 100%;
+
+        display: block;
+
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+        list-style: none;
+
+        text-align: center;
+    }
+    .slick-dots li
+    {
+        position: relative;
+
+        display: inline-block;
+
+        width: 20px;
+        height: 20px;
+        margin: 0 5px;
+        padding: 0;
+
+        cursor: pointer;
+    }
+    .slick-dots li button
+    {
+        font-size: 0;
+        line-height: 0;
+
+        display: block;
+
+        width: 20px;
+        height: 20px;
+        padding: 5px;
+
+        cursor: pointer;
+
+        color: transparent;
+        border: 0;
+        outline: none;
+        background: transparent;
+    }
+    .slick-dots li button:hover,
+    .slick-dots li button:focus
+    {
+        outline: none;
+    }
+    .slick-dots li button:hover:before,
+    .slick-dots li button:focus:before
+    {
+        opacity: 1;
+    }
+    .slick-dots li button:before
+    {
+        font-family: 'slick';
+        font-size: 20px;
+        line-height: 20px;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 20px;
+        height: 20px;
+
+        content: '•';
+        text-align: center;
+
+        opacity: .25;
+        color: black;
+
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    .slick-dots li.slick-active button:before
+    {
+        opacity: .75;
+        color: black;
+    }
+	.product-item.slick-slide {
+		float: left !important;
+	}
+</style>
+<!--END: template_styles-->
