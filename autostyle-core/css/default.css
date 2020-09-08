@@ -533,6 +533,7 @@ ul.social-icons li.social-icons-label {
 }
 .sale-price {
     color: #d04b64;
+    margin-left: 5px;
 }
 del.original-price {
     font-weight: 500;
@@ -549,7 +550,7 @@ span.freeshipping {
 .product-item .price {
     border-top: 1px solid rgba(236, 236, 236, 0.14);
     padding-top: 10px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     margin-bottom: 0;
     height: auto;
@@ -858,7 +859,7 @@ span.freeshipping {
 }
 .mobile-menu-widget ul li a {
     padding: 0;
-    line-height: 40px;
+    /* line-height: 40px; */
     font-size: 13px;
     background-color: transparent !important;
     display: block;
@@ -1261,6 +1262,10 @@ span.freeshipping {
 .hp-brands-flexslider .flex-direction-nav .flex-next {
     right: 0 !important;
     opacity: 1;
+}
+.product-item .on-sale-badge{
+    top: 0;
+    right: 0;
 }
 @media(max-width: 991px) {
     .hp-slider-text-outer,
@@ -2659,14 +2664,15 @@ body.has-active-menu {
     border-bottom: 1px solid #eee;
 }
 .mobile-menu-widget ul li a {
-    padding: 0 20px;
+    padding: 10px 20px;
     text-transform: uppercase;
 }
 #mobile-categories ul li.dropdown {
     position: relative;
 }
 .mobile-menu-inner li > .dropdown-menu a {
-    padding-left: 40px;
+    padding-left: 30px;
+    white-space: normal;
 }
 .mobile-menu-widget ul li.dropdown .subcat-dropdown {
     position: absolute;
