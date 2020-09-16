@@ -6,24 +6,45 @@
                     //Slide JSON format
                     /*
 					{                         
-						"background_color": "#000000",
 						"background_image": "/assets/templates/autostyle-core/images/slider.jpg",
 						"button_link": "#",
 						"button_text": "Shop now",
 						"details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nunc magna, malesuada a mauris sit amet, tempor tempus neque. Ut consectetur orci a luctus porttitor. Cras sagittis dui augue,at elementum massa rutrum at. Nullam a magna in nibh feugiat porttitor.Duis at lectus neque. Aenean viverra viverra magna, sit amet condimentum tellus suscipit quis. ",
 						"front_image": "#",
-						"heading": "Proformance Advanced Autoparts",
-						"text_color": "#ffffff"
+						"heading": "Proformance Advanced Autoparts"
 					}
                     */
 
                     var slides = '[';
                     //<!--START: carousel-->
-                    slides += '[image],'
+	
+					var imgVal = '[image]';
+					
+					var checkVal = check(imgVal);
+
+					if(checkVal == true){
+						slides += '[image],';
+						console.log('Correct Json Format');
+					}else{
+						console.log('Incorrect Json Format');
+					}
+				
                     //<!--END: carousel-->
                     //remove last comma (,)
                     slides = slides.substring(0, slides.length - 1);
                     slides = slides + ']';
+				
+				function check(imgVals){
+					
+					var specialChars = "{}";
+					
+					for(i = 0; i < specialChars.length;i++){
+						if(imgVals.indexOf(specialChars[i]) > -1){
+							return true;
+						}
+					}
+					return false;
+				}
             </script>
 
             <div id="hp-slide-format" class="hidden">
@@ -94,7 +115,7 @@
 	<!--START: FEATURE_MENU-->
     <section class="products-section">
         <div class="container"> 
-            <h2 class="header-specials tc-animate-me animated" data-animation="fadeInUp">[category_Header-specials]</h2>
+            <h2 class="header-specials tc-animate-me animated title" data-animation="fadeInUp">[category_Header-specials]</h2>
             <!--START: CATEGORY_ITEMS-->
             <div class="product-items product-items-[product-cols-number] tc-animate-me" data-animation="fadeInUp">
                <div id="carousel-sellers" class="carousel slide">
@@ -117,7 +138,7 @@
 			</div>
 			<div class="col-sm-6 col-xs-12 slider-details-holder">
 				<div class="slider-details scrollme">
-					<h2 class="animateme" data-when="enter" data-from=".75" data-to="0" data-opacity="0" data-translatex="400">Performance</h2>
+					<h2 class="animateme title" data-when="enter" data-from=".75" data-to="0" data-opacity="0" data-translatex="400">Performance</h2>
 					<div class="slider-info animateme" data-when="enter" data-from=".75" data-to="0" data-opacity="0" data-translatex="400">
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nunc magna, malesuada a mauris sit amet, tempor tempus neque. Ut consectetur orci a luctus porttitor. Cras sagittis dui augue, at elementum massa rutrum at. Nullam a magna in nibh feugiat porttitor.
@@ -127,7 +148,7 @@
 						</p>
 					</div>
 					<div class="cta-btn animateme" data-when="enter" data-from=".75" data-to="0" data-opacity="0" data-translatex="400">
-						<a href="#">MORE DETAILS</a>
+						<a class="btn btn-default" href="#">MORE DETAILS</a>
 					</div>
 				</div>
 			</div>
@@ -138,7 +159,7 @@
 	
 	<section class="testimonial-section">
 		<div class="container">
-			<h2>Testimonials</h2>
+			<h2 class="title">Testimonials</h2>
 			<div id="carousel-sellers2" class="carousel slide">	
 				<div class="col-md-4">
 					<div>
@@ -247,7 +268,7 @@
 	<section class="cta-section">
         <div class="container">
 			<h2>Contact us for all your auto parts & services</h2>
-			<a href="/crm.asp?action=contactus">CONTACT US</a>
+			<a class="btn btn-default" href="/crm.asp?action=contactus">CONTACT US</a>
 		</div>
     </section>
 	
@@ -290,20 +311,36 @@
 <script type="text/javascript" src="/assets/templates/common-core/lib/flexslider/jquery.flexslider-min.js"></script>
 <script type="text/javascript" charset="utf-8">
     jQuery(function () {
-
+		
         var slidesJson = jQuery.parseJSON(slides);
+		
         jQuery(slidesJson).each(function (i, element) {
             var slideItem = jQuery("<li></li>");
             var slideFormat = jQuery('#hp-slide-format > div').clone();
 
-            jQuery(slideItem).css('background-image', 'url('+element.background_image+')');
-            jQuery(slideItem).css('background-color', element.background_color);
-            jQuery(slideFormat).find('.hp-slider-text').css('color', element.text_color);
-
-            jQuery(slideFormat).find('.hp-slider-text h3').html(element.heading);
-            jQuery(slideFormat).find('.hp-slider-text p').html(element.details);
-            jQuery(slideFormat).find('.hp-slider-cta a').attr('href', element.button_link);
-            jQuery(slideFormat).find('.hp-slider-cta a').html(element.button_text);
+			if(element.background_image){
+				jQuery(slideItem).css('background-image', 'url('+element.background_image+')');
+			}
+			
+			if(element.heading){
+				jQuery(slideFormat).find('.hp-slider-text h3').html(element.heading);
+			}
+			
+			if(element.details){
+				jQuery(slideFormat).find('.hp-slider-text p').html(element.details);
+			}
+			
+			if(element.button_link){
+				jQuery(slideFormat).find('.hp-slider-cta a').attr('href', element.button_link);
+			}
+			
+			if(element.button_text){
+				jQuery(slideFormat).find('.hp-slider-cta a').html(element.button_text);
+			}
+			
+			
+        
+            
             //jQuery(slideFormat).find('.hp-slider-img').append('<img src=' + element.front_image + ' alt="" />');
     
             jQuery(slideItem).append(slideFormat);

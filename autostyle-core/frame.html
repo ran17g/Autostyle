@@ -19,7 +19,7 @@
 	<link rel="stylesheet" href="assets/templates/common-core/lib/bootstrap/css/bootstrap.css" type="text/css" />
 	<link rel="StyleSheet" href="assets/templates/common-core/css/core.css" type="text/css" />
 	[page_styles]
-	<link rel="StyleSheet" href="assets/templates/[template]/css/default.css" type="text/css" />
+	<link rel="StyleSheet" href="assets/templates/[template]/css/[stylesheet]?v=1.12" type="text/css" />
 	<!--END: page_styles-->
 </head>
 
@@ -321,12 +321,7 @@
 					
 					<div class="col-md-10">
 						<div id="InstagramGallery">
-						  <div class="wow fadeInUp" data-wow-delay="0.1s">
-							 <div class="widget-title">
-								<h4>Instagram</h4>
-							 </div>
-							 <div id="instafeed" class="owl-carousel"></div>
-						  </div>
+						  
 					   </div>	
 					</div>
                 </div>
@@ -403,51 +398,6 @@
     <script src="assets/templates/[template]/js/main.js"></script>
 	<script src="assets/templates/common-core/lib/waypoints/jquery.waypoints.min.js"></script>
 	[page_scripts]
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"></script>
-	<script>
-	   jQuery(document).ready(function() {
-		  var feed = new Instafeed({
-			 get: "user",
-			 userId: 6051820857,
-			 accessToken: '6051820857.1677ed0.1866d9fec40e45b5921e408fa95a4cec',
-			 resolution: "low_resolution",
-			 limit: "17",
-			 after: function() {
-				jQuery("#instafeed a").attr("target", "_blank");
-				jQuery("#instafeed").owlCarousel({
-				   nav: true,
-				   dots: false,
-					loop: true,
-					autoplay: true,
-				   items: 6,
-				   margin: 5,
-				   slideBy: 6,
-				   responsive: {
-					  0: {
-						 items: 3,
-						 slideBy: 3
-					  },
-					  768: {
-						 items: 3,
-						 slideBy: 3
-					  },
-					  992: {
-						 items: 4,
-						 slideBy: 4
-					  },
-					  1200: {
-						 items: 5,
-						 slideBy: 5
-					  }
-				   },
-				   responsiveRefreshRate: 0
-				});
-			 }
-		  });
-		  feed.run();
-
-	   });
-	</script>
 	<!--END: page_scripts-->
 
     <!--START: quicksearch-->
